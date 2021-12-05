@@ -46,3 +46,66 @@ public class TugasJavaFX extends Application {
         rect.setFill(Color.BLACK);
         
         btnOK.setOnAction(new EventHandler<ActionEvent>() {
+        
+        @Override
+            public void handle(ActionEvent event) {
+       
+            }
+        });
+        
+        Group root = new Group();
+        HBox panel = new HBox();
+        HBox panel1 = new HBox();
+        HBox panel2 = new HBox();
+        HBox panel3 = new HBox();
+        HBox panel4 = new HBox();
+        HBox panel5 = new HBox();
+        HBox panel6 = new HBox();
+        
+        TilePane panel7 = new TilePane();
+        
+        panel.getChildren().add(text);
+        
+        panel1.getChildren().add(labelInput1);
+        panel1.getChildren().add(tf1);
+        
+        panel2.getChildren().add(labelInput2);
+        panel2.getChildren().add(tf2);
+        
+        panel3.getChildren().add(labelInput3);
+        panel3.getChildren().add(tf3);
+        
+        panel4.getChildren().add(labelInput4);
+        panel4.getChildren().add(tf4);
+        
+        panel5.getChildren().add(labelInput5);
+        panel5.getChildren().add(tf5);
+        
+        panel6.getChildren().add(labelInput6);
+        panel6.getChildren().add(tf6);
+        
+        panel7.getChildren().addAll(btnOK);
+        
+        panel.setLayoutX(15);
+        panel.setLayoutY(10);
+        
+        panel1.setLayoutX(60);
+        panel1.setLayoutY(60);
+        
+        panel2.setLayoutX(60);
+        panel2.setLayoutY(95);
+        
+        panel3.setLayoutX(38);
+        panel3.setLayoutY(130);
+        
+        panel4.setLayoutX(57);
+        panel4.setLayoutY(165);
+        
+        panel5.setLayoutX(67);
+        panel5.setLayoutY(200);
+        
+        panel6.setLayoutX(21);
+        panel6.setLayoutY(235);
+        
+        panel7.setLayoutX(170);
+        panel7.setLayoutY(270);
