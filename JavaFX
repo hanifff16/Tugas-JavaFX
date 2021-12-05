@@ -109,3 +109,13 @@ public class TugasJavaFX extends Application {
         
         panel7.setLayoutX(170);
         panel7.setLayoutY(270);
+        
+        root.getChildren().addAll(rect,panel,panel1, panel2, panel3, panel4, panel5, panel6, panel7);
+        
+        Scene scene = new Scene(root, 400, 350);
+        scene.setFill(Color.WHITE);
+        
+        primaryStage.setTitle("REGISTER");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
