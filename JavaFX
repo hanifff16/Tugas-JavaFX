@@ -21,3 +21,28 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.scene.text.Text; 
+
+public class TugasJavaFX extends Application {
+    
+    @Override
+    public void start(Stage primaryStage) {
+        Button btnOK = new Button();
+        btnOK.setText("Register");
+        TextField tf1 = new TextField();
+        TextField tf2 = new TextField();
+        TextField tf3 = new TextField();
+        TextField tf4 = new TextField();
+        TextField tf5 = new TextField();
+        TextField tf6 = new TextField();
+        Text text = new Text("Register"); 
+        text.setFill(Color.WHITE); 
+        Label labelInput1 = new Label("First Name     ");
+        Label labelInput2 = new Label("Last Name     ");
+        Label labelInput3 = new Label("E-mail Address     ");
+        Label labelInput4 = new Label("Contact No     ");
+        Label labelInput5 = new Label("Password     ");
+        Label labelInput6 = new Label("Confirm Password     ");
+        Rectangle rect = new Rectangle(5,7,390,30);
+        rect.setFill(Color.BLACK);
+        
+        btnOK.setOnAction(new EventHandler<ActionEvent>() {
